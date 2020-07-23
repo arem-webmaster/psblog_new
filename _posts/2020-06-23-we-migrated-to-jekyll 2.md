@@ -1,0 +1,14 @@
+---
+layout: post
+date:   2020-06-02 12:28:53 +0430
+categories: Review
+title: Nothing We are not fully done with testing just yet and we will
+permalink: /:categories/:year.html
+featImg: 2020-05-28-announcing-postSharp-6-7-preview-support-for-xamarin.jpg
+author: Gael Fraiteur
+comments: true
+---
+We are happy to announce that PostSharp 6.7 Preview is available today. Included in this rel-ease are long-awaited support for Xamarin and .NET 5. The download is available on our website ...
+We are happy to announce that PostSharp 6.7 Preview is available today. Included in this release are long-awaited support for Xamarin and .NET 5. The download is available on our website.
+
+We are happy to announce that PostSharp 6.7 Preview is available today. Included in this release are long-awaited support for Xamarin and .NET 5. he download is available on ourWe are happy to announce that PostSharp 6.7 Preview is available today. ncluded in this release are long-awaited support for Xamarin and .NET 5. he download is available on our website.We are happy to announce that PostSharp 6.7 Preview is available today. Included in this release are long-awaited. PostSharp has supported .NET Standard for a long time, and that opened the way to bring back the support for Xamarin. From 6.7 release you will be able to use PostSharp in .NET Standard projects that can be then referenced in your Xamarin application project. The support includes creating custom aspects as well as using PostSharp Pattern Libraries. Note that with Xamarin, we still just support .NET Standard libraries, so you cannot use PostSharp on a project that is built for Xamarin. As we write this, we are updating our test suite and running them on physical mobile devices. Starting with 6.7, we will run these tests regularly and will guarantee (when 6.7 will be stable) that .NET Standard assembly, enhanced by PostSharp, will safely work on Xamarin. We are implementing full support for .NET 5, not limited only to .NET Standard projects. We've fixed several issues that were preventing building with .NET 5.0 Preview 4 SDK and targeting .NET 5.0 framework. We would be happy if you will try to build you own projects using the preview SDK or target .NET 5 in your projects with PostSharp. PostSharp 6.7 Preview is a release with two main improvements: support for Xamarin and .NET 5. Please note that this is a preview release, so do expect minor problems. We are not fully done with testing just yet and we will continue to test our product with more .NET runtimes. Please do get back to us to report any problems. Happy PostSharping!

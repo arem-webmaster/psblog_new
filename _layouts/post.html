@@ -1,0 +1,43 @@
+
+{% include header.html%}
+<div class="page_wrapper post_page">    
+    <section class="post_header">
+        <figure>
+            <img src="{{site.baseurl}}/assets/images/blog/{{page.featImg}}" alt="{{page.title}}">
+        </figure>                    
+        <h1>{{page.title | strip_html | strip_newlines | truncate: 150}}</h3>
+        <div class="post_details">by <span>{{page.author}}</span> on {{ page.date | date_to_string }}</div>
+        <div class="post_share_n_tag">
+            <div class="share_buttons">
+                {% include share_buttons.html %}
+            </div>
+            <div class="post_category"><a href="{{site.baseurl}}archive.html#{{page.categories}}"><img src="{{site.baseurl}}/assets/images/icons/tag_white.svg" alt=""> {{page.categories}}</a></div>
+        </div>
+        <div class="post_excerpt">
+            {{ page.excerpt | strip_newlines }}
+        </div>        
+        <div class="share_buttons desktop">
+            {% include share_buttons.html %}
+        </div>
+    </section>    
+    <section class="post_content">
+    {{ content | remove: page.excerpt }}  
+    </section>
+    <div class="post_footer_share_buttons">
+        <ul>
+            <li><a href="https://facebook.com/sharer.php?u={{ site.url }}{{ post.url }}" rel="nofollow" target="_blank" title="Share on Twitter"><img src="{{site.baseurl}}/assets/images/icons/facebook_p.svg" alt=""></a></li>
+            <li><a href="https://twitter.com/intent/tweet?text={{ post.title }}&url={{ site.url }}{{ post.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter"><img src="{{site.baseurl}}/assets/images/icons/twitter_p.svg" alt=""></a></li>
+            <li><a href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ post.url }}&title={{post.title}}&summary={{post.excerpt | strip_html | strip_newlines | truncate: 80}}&source={{ site.url }}" rel="nofollow" target="_blank" title="Share on Twitter"><img src="{{site.baseurl}}/assets/images/icons/linkedin_p.svg" alt=""></a></li>
+        </ul>           
+    </div>
+
+    {% if page.comments %}
+    <section class="post_comments">
+        <h3>Comments</h3>
+        {% include disqus_comments.html %}
+        {% endif %}      
+    </section>
+</div>
+
+{% include newsletter.html %}
+{% include footer.html %}
