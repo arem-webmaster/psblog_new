@@ -16,8 +16,7 @@ header .items_wrapper{
     align-content: center;
     padding: rem(22px) rem(25px) rem(10px) rem(25px);
     @media screen and (min-width: rem($mobile_breakpoint , 'desktop')){         
-        padding: rem(35px , 'desktop') rem($desktop_side_margins , 'desktop');
-        
+        padding: rem(35px , 'desktop') rem($desktop_side_margins , 'desktop')/3;        
         margin:0 auto;        
     }    
     @media screen and (min-width: rem($desktop_wide_width , 'desktop')){         

@@ -37,47 +37,58 @@
 	</section>
 	
 	
-	<section class="featured_posts">
-	    <h2>Featured Posts</h2>    
-	    {% for post in site.posts limit:3 %}
-	    <div class="blog_item">
-	        <figure>
-				<a href="{{site.baseurl}}{{ post.url }}"><img src="{{site.baseurl}}/assets/images/blog/{{post.featImg}}" alt="{{post.title}}"></a>
-	        </figure>
-	        <h3>{{post.title}}</h3>
-	        <p class="post_excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>
-	        <a class="read_button" href="{{site.baseurl}}{{ post.url }}">Read</a>
-	    </div>
-	    {% endfor %}
-	    <div class="sidebar_left"></div>
-	    <div class="sidebar_right"></div>
-	</section>
-	<section class="categories">
-	    <h2>Categories</h2>
-	    <ul>
-	        {% for category in site.categories %}
-	        <li><a href="{{site.baseurl}}/archive#{{category[0] | downcase}}">{{ category[0] }}</a></li>
-	        {% endfor %}
-	    </ul>
-	</section>
-	<section class="older_posts">
-	    <h2>Older Posts</h2>
-	    {% for post in site.posts limit:9 %}
-	    <div class="blog_item">
-	        <figure>
-	            <img src="{{site.baseurl}}/assets/images/blog/{{post.featImg}}" alt="{{post.title}}">
-	        </figure>
-	        <h3>{{post.title}}</h3>
-	        <p class="post_excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>
-	        <a class="read_button" href="{{site.baseurl}}{{ post.url }}">Read</a>
-	    </div>
-	    {% endfor %}
-	    <div class="sidebar_left"></div>
-	    <div class="sidebar_right"></div>    
-	</section>
-	<section class="older_posts_button">
-	    <a href="{{site.baseurl}}/archive.html"><h2>Older posts</h2></a>
-	</section>
+
 </div>
+
+<section class="featured_posts">
+	<h2>Featured Posts</h2>    
+	{% for post in site.posts limit:3 %}
+	<div class="blog_item">
+		<figure>
+			<a href="{{site.baseurl}}{{ post.url }}"><img src="{{site.baseurl}}/assets/images/blog/{{post.featImg}}" alt="{{post.title}}"></a>
+		</figure>
+		<h3>{{post.title}}</h3>
+		<p class="post_excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>
+		<a class="read_button" href="{{site.baseurl}}{{ post.url }}">Read</a>
+	</div>
+	{% endfor %}
+	<div class="sidebar_left"></div>
+	<div class="sidebar_right"></div>
+</section>
+<section class="categories">
+	<h2>Categories</h2>
+	<ul>
+		{% for category in site.categories %}
+		<li><a href="{{site.baseurl}}/archive.html#{{category[0] | downcase}}">{{ category[0] }}</a></li>
+		{% endfor %}
+	</ul>
+</section>
+<section class="older_posts">
+	<h2>Older Posts</h2>
+	{% for post in site.posts limit:9 %}
+	<div class="blog_item">
+		<figure>
+			<img src="{{site.baseurl}}/assets/images/blog/{{post.featImg}}" alt="{{post.title}}">
+		</figure>
+		<h3>{{post.title}}</h3>
+		<p class="post_excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>
+		<a class="read_button" href="{{site.baseurl}}{{ post.url }}">Read</a>
+	</div>
+	{% endfor %}
+	<div class="sidebar_left"></div>
+	<div class="sidebar_right">
+		<div class="categories">
+			<h2>Categories</h2>
+			<ul>
+				{% for category in site.categories %}
+				<li><a href="{{site.baseurl}}/archive.html#{{category[0] | downcase}}">{{ category[0] }}</a></li>
+				{% endfor %}
+			</ul>
+		</div>			
+	</div>    
+</section>
+<section class="older_posts_button">
+	<a href="{{site.baseurl}}/archive.html"><h2>Older posts</h2></a>
+</section>
 {% include newsletter.html %}
 {% include footer.html %}
