@@ -8,7 +8,7 @@
 	
 	                <div class="post_data">
 	                    <figure>
-	                        <img src="{{site.baseurl}}/assets/images/blog/{{post.featImg}}" alt="{{post.title}}">
+	                        <a href="{{site.baseurl}}{{ post.url }}"><img src="{{site.baseurl}}/assets/images/blog/{{post.featImg}}" alt="{{post.title}}"></a>
 	                    </figure>                    
 	                    <h3>{{post.title | strip_html | strip_newlines | truncate: 150}}</h3>
 	                    <div class="post_details">by <span>{{post.author}}</span> on {{ post.date | date_to_string }}</div>
@@ -42,7 +42,7 @@
 	    {% for post in site.posts limit:3 %}
 	    <div class="blog_item">
 	        <figure>
-	            <img src="{{site.baseurl}}/assets/images/blog/{{post.featImg}}" alt="{{post.title}}">
+				<a href="{{site.baseurl}}{{ post.url }}"><img src="{{site.baseurl}}/assets/images/blog/{{post.featImg}}" alt="{{post.title}}"></a>
 	        </figure>
 	        <h3>{{post.title}}</h3>
 	        <p class="post_excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>

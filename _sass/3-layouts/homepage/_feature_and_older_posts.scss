@@ -5,9 +5,10 @@
     }
     @media screen and (min-width: rem($mobile_breakpoint)){ 
         padding:0 rem($desktop_side_margins, 'desktop') rem(50px , 'desktop') rem($desktop_side_margins, 'desktop') ;
+        margin-top:rem(245px, 'desktop');
         @supports(display: grid){
             display: grid;
-            grid-template-columns: 1fr repeat(3, minmax(250px, 350px)) 1fr;
+            grid-template-columns: 1fr repeat(3, minmax(250px, 390px)) 1fr;
             gap: rem(50px , 'desktop') rem(50px, 'desktop');
             
             h2{
@@ -37,10 +38,10 @@
     margin-top: rem(35px);
     
     @media screen and (min-width: rem($mobile_breakpoint)){         
-        padding:0 rem($desktop_side_margins, 'desktop') rem(50px , 'desktop') rem($desktop_side_margins, 'desktop') ;
+        padding:0 rem($desktop_side_margins, 'desktop') rem(50px , 'desktop') rem($desktop_side_margins, 'desktop') ;        
         @supports(display: grid){
             display: grid;
-            grid-template-columns: 1fr repeat(3, minmax(250px, 350px)) 1fr;
+            grid-template-columns: 1fr repeat(3, minmax(250px, 390px)) 1fr;
             gap: rem(50px , 'desktop') rem(50px, 'desktop');
             h2{
                 grid-column: 2/5;
@@ -134,6 +135,7 @@
 
     h3{
         margin: 0px 22px 40px ;
+        font-family: $ff-texts;
     }
     .post_excerpt{
         margin:0 22px 25px 22px;
