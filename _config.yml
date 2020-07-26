@@ -22,7 +22,7 @@ title: Postsharp Blog
 email: info@postsharp.com
 description: >- # this means to ignore newlines until "baseurl:"
   Latest updates about our products and services.
-baseurl: "/psblog_new" # the subpath of your site, e.g. /blog
+baseurl: "/psblog_new1" # the subpath of your site, e.g. /blog
 url: "http://postsharp-blog.algorstudio.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: postsharp
 github_username:  postsharp

@@ -17,7 +17,8 @@
                 margin-bottom:-15px; 
                 padding-bottom: 30px;             
                 border-bottom:1px solid $light_gray;       
-                font-size:rem(20px, 'desktop');         
+                font-size:rem(20px, 'desktop');
+                
             }
             .sidebar_left{
                 grid-column: 1/2;
@@ -120,10 +121,12 @@
     h3{
         margin: 0px 22px 40px ;
         font-family: $ff-texts;
+        font-size:rem(20px, 'desktop');
+        font-weight: $fw-bold;
     }
     .post_excerpt{
         margin:0 22px 25px 22px;
-        font-size:rem(18px, 'desktop');
+        font-size:rem(18px, 'desktop');   
 
     }
     .read_button{
@@ -144,8 +147,7 @@
 }
 
 @media screen and (min-width: $mobile_breakpoint) and (max-width: 1580px){ 
-    .featured_posts, .older_posts{
-        
+    .featured_posts, .older_posts{        
         padding: 0 rem($desktop_side_margins , 'desktop')/3 3rem;
         @supports(display: grid){
             grid-template-columns: repeat(3, minmax(270px, 1fr)) ;

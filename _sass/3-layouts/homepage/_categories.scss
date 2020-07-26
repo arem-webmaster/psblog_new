@@ -20,6 +20,10 @@
                 font-size: em(9px);
                 background-color: $gray;
                 padding: 0.5em 1em;
+                transition: all 200ms ease-in-out;
+                &:hover{
+                    background-color: $dark_text_color;
+                }
             }
         }
     }

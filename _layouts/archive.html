@@ -1,7 +1,7 @@
 {% include header.html title="Archive" %}
 <div class="page_wrapper archive_page">
     <h1>archive</h1>
-    <section class="categories">
+    <section class="archive_categories">
         <ul>
             {% assign categories_list = site.categories %}
             {% if categories_list.first[0] == null %}
@@ -18,11 +18,15 @@
             {% endfor %}
             {% endif %}
             {% assign categories_list = nil %}
-        </ul>       
+        </ul>  
+        <div class="share_buttons desktop">
+            {% include share_buttons.html isPage = true %}
+        </div>     
     </section>
     {% for category in site.categories %}
     <section class="category_posts {{category[0]}}_category">
-        <h3 id="{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</h3>
+        <a id="{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}"></a>
+        <h3>{{ category[0] | camelcase }} ({{ category[1].size }})</h3>
         <div class="category_heading">
             <span class="date">Date</span>
             <span class="title">Title</span>

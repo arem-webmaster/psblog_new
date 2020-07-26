@@ -1,12 +1,14 @@
 html{
     font-size:$fs-base-mobile;    
+    scroll-behavior: smooth;
     @media screen and (min-width: rem($mobile_breakpoint)){ 
         font-size:$fs-base-desktop;
-    }
+    }    
 }
 body{
     font-family: LatoLatinWeb;
 }
+
 h1,h2,h3,h4,h5{
     
     font-family: Monosten;
@@ -25,7 +27,7 @@ h2{
     text-align: center;
     font-weight: $fw-normal;
 }
-p{
+p{    
     line-height: rem(20px);
 }
 img{
