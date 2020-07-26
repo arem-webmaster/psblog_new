@@ -3,7 +3,7 @@
 	<section class="latest_posts">
 	    <div class="swiper-container">
 	        <div class="swiper-wrapper">
-	            {% for post in site.posts limit:7 %}
+	            {% for post in site.posts limit:5 %}
 	            <div class="swiper-slide">
 	
 	                <div class="post_data">
@@ -46,7 +46,7 @@
 		</figure>
 		<h3>{{post.title}}</h3>
 		<p class="post_excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>
-		<a class="read_button" href="{{site.baseurl}}{{ post.url }}">Read</a>
+		<a class="read_button" href="{{site.baseurl}}{{ post.url }}">READ</a>
 	</div>
 	{% endfor %}
 	<div class="sidebar_left"></div>
