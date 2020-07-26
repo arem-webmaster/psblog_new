@@ -134,6 +134,12 @@
                 font-size:rem(30px , 'desktop');                
                 margin-top:rem(129px , 'desktop');
             }
+            ul {
+                li {
+                    padding-bottom: rem(9px);
+                    margin-bottom:rem(9px);
+                }
+            }
         }  
         .blog_stats {
             margin-top:rem(150px, 'desktop');
