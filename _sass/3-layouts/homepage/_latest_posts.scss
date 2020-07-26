@@ -166,7 +166,8 @@
         }
         .post_details {
             font-size: rem(18px, "desktop");
-            margin-top: rem(20px, "desktop");
+            //margin-top: rem(20px, "desktop");
+            margin-top:0;
             font-family: $ff-headings;
             @supports (display: grid) {
                 grid-column: 2 / 3;
@@ -194,7 +195,9 @@
         }
         .swiper-pagination.in-pagination {
             margin: 0;
+            margin-right: -15%;
             width: 230px;
+
             @supports (display: grid) {
                 position: unset;
                 grid-column: 2 / 3;
@@ -217,7 +220,8 @@
         }
     }
     .post_category {
-        margin-top: rem(20px, "desktop");
+        //margin-top: rem(20px, "desktop");
+        margin-top:0;
         a {
             font-size: rem(14px, "desktop");
         }
