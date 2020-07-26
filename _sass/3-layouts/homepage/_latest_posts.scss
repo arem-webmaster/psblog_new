@@ -47,7 +47,7 @@
         }        
     }
     .swiper-container {
-        height: 100vh;
+        height: 600px;
     }
     .swiper-pagination-bullet {
         width: 36px;
@@ -194,7 +194,7 @@
         }
         .swiper-pagination.in-pagination {
             margin: 0;
-            width: 340px;
+            width: 230px;
             @supports (display: grid) {
                 position: unset;
                 grid-column: 2 / 3;
