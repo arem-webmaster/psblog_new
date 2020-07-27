@@ -32,6 +32,8 @@
     }
     .post_excerpt {
         margin: 1rem 0;
+        font-size: 11px;
+        line-height: 20px;        
     }
     .read_button {
         display: block;
@@ -45,6 +47,7 @@
         &:hover {
             background-color: $dark_text_color;
         }
+        margin-top:15px;
     }
     .swiper-container {
         height: 600px;
@@ -72,6 +75,7 @@
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
+        position: unset;
     }
 }
 

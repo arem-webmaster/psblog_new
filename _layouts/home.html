@@ -24,9 +24,9 @@
 							{{ post.excerpt | strip_html | strip_newlines | truncate: 220 }}
 						</p>			
 									
-						<div class="pagination_and_read_button">
-							<a class="read_button" href="{{site.baseurl}}{{ post.url }}">READ</a>
+						<div class="pagination_and_read_button">							
 							<div class="swiper-pagination in-pagination"></div>
+							<a class="read_button" href="{{site.baseurl}}{{ post.url }}">READ</a>
 						</div>
 	                    <div class="share_buttons desktop">
 	                        {% include share_buttons.html %}
