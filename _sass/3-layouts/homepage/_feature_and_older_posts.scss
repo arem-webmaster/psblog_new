@@ -121,19 +121,19 @@
     }
 
     h3{
-        margin: 0px 22px 40px ;
+        margin: 0px 40px 45px ;
         font-family: $ff-texts;
         font-size:rem(20px, 'desktop');
         font-weight: $fw-bold;
     }
     .post_excerpt{
-        margin:0 22px 25px 22px;
+        margin:0 40px 55px;
         font-size:rem(18px, 'desktop');   
 
     }
     .read_button{
         display: block;
-        padding: rem(15px, 'desktop') 0;
+        padding: rem(22px, 'desktop') 0;
         font-size:rem(18px, 'desktop');
         font-weight: $fw-bold;
         text-align: center;

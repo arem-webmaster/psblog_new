@@ -46,7 +46,7 @@
 			<a href="{{site.baseurl}}{{ post.url }}"><img src="{{site.baseurl}}/assets/images/blog/{{post.featImg}}" alt="{{post.title}}"></a>
 		</figure>
 		<h3>{{post.title}}</h3>
-		<p class="post_excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>
+		<p class="post_excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 240 }}</p>
 		<a class="read_button" href="{{site.baseurl}}{{ post.url }}">READ</a>
 	</div>
 	{% endfor %}
@@ -69,7 +69,7 @@
 			<img src="{{site.baseurl}}/assets/images/blog/{{post.featImg}}" alt="{{post.title}}">
 		</figure>
 		<h3>{{post.title}}</h3>
-		<p class="post_excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>
+		<p class="post_excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 240 }}</p>
 		<a class="read_button" href="{{site.baseurl}}{{ post.url }}">READ</a>
 	</div>
 	{% endfor %}
