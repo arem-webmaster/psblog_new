@@ -100,41 +100,27 @@
     box-shadow: 0px 0px 31px -8px rgba(0,0,0,0.75);
     margin:0 $mobile_side_margins rem(35px) $mobile_side_margins;
     transition: all .5s ease;
-    @media screen and (min-width: rem($mobile_breakpoint)){ 
-        @supports(display: grid){            
-            margin: 0;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: flex-start;                    
-        }
-        & > *{
-            display: flex;
-            flex-flow: column nowrap;
-        }        
-        .read_button{
-            margin-top: auto;            
-        }
 
-    }
     figure{
-        margin-bottom: rem(37px, 'desktop');
+        margin-bottom: rem(17px);
     }
 
     h3{
-        margin: 0px 40px 45px ;
+        margin: 0px 22px 17px ;
         font-family: $ff-texts;
-        font-size:rem(20px, 'desktop');
+        font-size:rem(16px);
+        line-height: 19px;
         font-weight: $fw-bold;
     }
     .post_excerpt{
-        margin:0 40px 55px;
-        font-size:rem(18px, 'desktop');   
-
+        margin:0 22px 20px;        
+        font-size:rem(10px);           
+        line-height: 18px;
     }
     .read_button{
         display: block;
-        padding: rem(22px, 'desktop') 0;
-        font-size:rem(18px, 'desktop');
+        padding: rem(11px, 'desktop') 0;
+        font-size:rem(12px, 'desktop');
         font-weight: $fw-bold;
         text-align: center;
         border-top:1px solid $light_gray;
@@ -145,6 +131,38 @@
     &:hover{
         transform: scale(1.05);
     }
+    @media screen and (min-width: rem($mobile_breakpoint)){ 
+        @supports(display: grid){            
+            margin: 0;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;                    
+        }
+
+        & > *{
+            display: flex;
+            flex-flow: column nowrap;
+        }    
+        figure{
+            margin-bottom: rem(37px, 'desktop');
+        }        
+        h3{
+            margin: 0px 40px 45px ;
+            font-size:rem(20px, 'desktop');
+            line-height: 24px;
+        }        
+        .post_excerpt{
+            margin:0 40px 55px;
+            font-size:rem(18px, 'desktop'); 
+            line-height: 28px;
+        }    
+        .read_button{
+            margin-top: auto;     
+            padding: rem(22px, 'desktop') 0;
+            font-size:rem(18px, 'desktop');                   
+        }
+
+    }    
 
 }
 
