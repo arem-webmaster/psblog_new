@@ -1,5 +1,5 @@
 .categories {
-    margin: rem(85px) calc(#{$mobile_side_margins} - 10px) rem(35px) calc(#{$mobile_side_margins} - 10px);
+    margin: rem(35px) calc(#{$mobile_side_margins} - 10px) rem(35px) calc(#{$mobile_side_margins} - 10px);
     h2 {
         margin-bottom: 35px;
     }
@@ -13,7 +13,7 @@
         flex-wrap: wrap;
 
         li {
-            margin: 0 em(7px) em(7px) 0;
+            margin: 0 7px 14px 0;
             a {
                 text-decoration: none;
                 color: $bright_texts_color;
