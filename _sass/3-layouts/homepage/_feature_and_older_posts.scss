@@ -14,8 +14,8 @@
             h2{
                 grid-column: 2/5;
                 text-align: left;
-                margin-bottom:-15px; 
-                padding-bottom: 30px;             
+                margin-bottom:-5px;
+                padding-bottom: 23px;             
                 border-bottom:1px solid $light_gray;       
                 font-size:rem(20px, 'desktop');
                 
@@ -71,7 +71,8 @@
     }    
 }
 .older_posts_button{
-    margin-bottom:rem(100px);
+    margin-top:rem(50px , 'desktop');
+    margin-bottom:rem(272px , 'desktop');
     text-align: center;
     transition: all 500ms ease-in-out;
     
@@ -80,14 +81,15 @@
         color:$dark_text_color;
     }
     h2{
-        @media screen and (min-width: rem($mobile_breakpoint)){  
-            margin-bottom:rem(300px , 'desktop');       
+        @media screen and (min-width: rem($mobile_breakpoint)){              
             font-size:rem(20px, 'desktop');
+            margin: 0;
         }
         &::after{
             content:'. . .';      
             display: block;
-            color:$gray;            
+            color:$gray;         
+            font-size: 25px;   
         }
     }
     &:hover{

@@ -63,7 +63,7 @@
 @media screen and (min-width: rem($mobile_breakpoint , 'desktop')){ 
     .newsletter .items_wrapper{
         margin:0 auto;
-        padding: rem(70px) rem($desktop_side_margins , 'desktop')/3 rem(80px) rem($desktop_side_margins , 'desktop')/3;
+        padding: rem(133px, 'desktop') rem($desktop_side_margins , 'desktop')/3;
         @supports (display: grid){
             display: grid;
             grid-template-columns: minmax(90px, 130px) 3fr 3fr;
